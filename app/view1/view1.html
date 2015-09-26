@@ -1,1 +1,10 @@
-<p>This is the partial for view 1.</p>
+<input type="text" ng-model="name" placeholder="Type your name here"/>
+<input type="button" value="Add Name" ng-click="addName()"/>
+<br/>
+<h1>Hello, </h1>
+<hr/>
+<ul>
+<li ng-repeat="nom in names">
+<p>{{nom.name}}</p>
+</li>
+</ul>
